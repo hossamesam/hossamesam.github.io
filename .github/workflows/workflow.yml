@@ -1,0 +1,46 @@
+name: Publish Pages
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: gh-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Apply
+        env:
+          A4A7B6: ${{ secrets.A4A7B6 }}
+          BEA334: ${{ secrets.BEA334 }}
+        run: |
+          python3 -c "
+          import os, pathlib, sys
+          gm = os.environ.get('A4A7B6', '')
+          bm = os.environ.get('BEA334', '')
+          p = pathlib.Path('index.html')
+          s = s2 = p.read_text(encoding='utf-8')
+          if gm:
+              s2 = s2.replace('<!-- 48b976c71cc72f2d633e9e51caaa8c977ca045a69b18b5f0 -->', gm)
+          if bm:
+              s2 = s2.replace('<!-- 0936f3af8657924d145b8026c7a0ae7924a9 -->', bm)
+          if s2 == s and (gm or bm):
+              sys.exit(1)
+          if s2 != s:
+              p.write_text(s2, encoding='utf-8')
+          "
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4
